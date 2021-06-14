@@ -1,4 +1,5 @@
 require_relative 'spec_helper'
+require 'pry'
 
 describe Show do
 
@@ -45,6 +46,8 @@ describe Show do
       expect(Show.most_popular_show).to eq(@rick_and_morty)
     end
   end
+
+
 
   describe ".lowest_rating" do
     it "returns the rating of the TV show with the lowest rating" do
